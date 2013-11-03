@@ -16,4 +16,5 @@ $email->addTo($to)->
        setHtml('<strong>Owl are you doing?</strong>')->
        addAttachment('./gif.gif', 'owl.gif');
 
-$sendgrid->web->send($email);
+$response = $sendgrid->web->send($email);
+var_dump($response);
