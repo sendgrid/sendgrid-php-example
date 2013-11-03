@@ -1,0 +1,16 @@
+{
+  "name": "sendgrid-php-example",
+  "description": "Example of using the SendGrid php library.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/scottmotte/sendgrid-php-example",
+  "license": "MIT",
+  "keywords": ["SendGrid", "sendgrid", "email", "send", "grid", "php"],
+  "minimum-stability" : "dev",
+  "require": {
+    "sendgrid/sendgrid": "1.1.0",
+    "vlucas/phpdotenv": "1.0.2"
+  },
+  "autoload": {
+    "files": ["vendor/sendgrid/sendgrid/lib/SendGrid.php"]
+  }
+}
