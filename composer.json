@@ -7,7 +7,7 @@
   "keywords": ["SendGrid", "sendgrid", "email", "send", "grid", "php"],
   "minimum-stability" : "dev",
   "require": {
-    "sendgrid/sendgrid": "1.1.0",
+    "sendgrid/sendgrid": "1.1.2",
     "vlucas/phpdotenv": "1.0.2"
   },
   "autoload": {

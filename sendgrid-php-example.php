@@ -13,7 +13,10 @@ $email->addTo($to)->
        setFrom($to)->
        setSubject('[sendgrid-php-example] Owl')->
        setText('Owl are you doing?')->
-       setHtml('<strong>Owl are you doing?</strong>')->
+       setHtml('<strong>%how% are you doing?</strong>')->
+       addSubstitution("%how%", array("Owl"))->
+       addMessageHeader('X-Sent-Using', 'SendGrid-API')->
+       addMessageHeader('X-Transport', 'web')->
        addAttachment('./gif.gif', 'owl.gif');
 
 $response = $sendgrid->web->send($email);
