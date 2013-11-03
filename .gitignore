@@ -1,4 +1,5 @@
 .DS_Store
 .env*
+!.env.example
 composer.lock
 vendor
