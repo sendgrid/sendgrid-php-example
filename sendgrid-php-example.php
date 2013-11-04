@@ -1,7 +1,6 @@
 <?php
 require 'vendor/autoload.php';
 Dotenv::load(__DIR__);
-SendGrid::register_autoloader();
 
 $sendgrid_username = $_ENV['SENDGRID_USERNAME'];
 $sendgrid_password = $_ENV['SENDGRID_PASSWORD'];
