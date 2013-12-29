@@ -18,5 +18,5 @@ $email->addTo($to)->
        addMessageHeader('X-Transport', 'web')->
        addAttachment('./gif.gif', 'owl.gif');
 
-$response = $sendgrid->web->send($email);
+$response = $sendgrid->send($email);
 var_dump($response);
