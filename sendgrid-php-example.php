@@ -14,9 +14,9 @@ $email->addTo($to)->
        setText('Owl are you doing?')->
        setHtml('<strong>%how% are you doing?</strong>')->
        addSubstitution("%how%", array("Owl"))->
-       addMessageHeader('X-Sent-Using', 'SendGrid-API')->
-       addMessageHeader('X-Transport', 'web')->
+       addHeader('X-Sent-Using', 'SendGrid-API')->
+       addHeader('X-Transport', 'web')->
        addAttachment('./gif.gif', 'owl.gif');
 
-$response = $sendgrid->web->send($email);
+$response = $sendgrid->send($email);
 var_dump($response);
