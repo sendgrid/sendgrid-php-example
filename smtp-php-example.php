@@ -19,10 +19,10 @@ $message->setSubject("[smtp-php-example] Owl");
 $message->setBody("%how% are you doing?");
 
 $header           = new Smtpapi\Header();
-$header->addSubVal("%how%", array("Owl"));
+$header->addSubstitution("%how%", array("Owl"));
 
 $message_headers  = $message->getHeaders();
-$message_headers->addTextHeader("x-smtpapi", $header->toJsonString());
+$message_headers->addTextHeader("x-smtpapi", $header->jsonString());
 
 try {
   $response = $mailer->send($message);
