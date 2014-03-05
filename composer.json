@@ -7,7 +7,7 @@
   "keywords": ["SendGrid", "sendgrid", "email", "send", "grid", "php"],
   "minimum-stability" : "dev",
   "require": {
-    "sendgrid/sendgrid": "2.0.1",
+    "sendgrid/sendgrid": "2.0.3",
     "sendgrid/smtpapi": "0.0.1",
     "vlucas/phpdotenv": "1.0.2",
     "swiftmailer/swiftmailer": "v5.0.3"
