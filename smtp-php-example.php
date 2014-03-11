@@ -15,10 +15,11 @@ $mailer     = Swift_Mailer::newInstance($transport);
 $message    = new Swift_Message();
 $message->setTo($to);
 $message->setFrom($to);
-$message->setSubject("[smtp-php-example] Owl");
+$message->setSubject("[smtp-php-example] Owl named %yourname%");
 $message->setBody("%how% are you doing?");
 
 $header           = new Smtpapi\Header();
+$header->addSubstitution("%yourname%", array("Mr. Owl"));
 $header->addSubstitution("%how%", array("Owl"));
 
 $message_headers  = $message->getHeaders();
