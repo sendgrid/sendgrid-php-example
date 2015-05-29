@@ -5,7 +5,7 @@ This is an example of using the [SendGrid php library](https://github.com/sendgr
 ## Usage
 
 ```bash
-git clone https://github.com/sendgrid/sendgrid-php-example.git 
+git clone https://github.com/sendgrid/sendgrid-php-example.git
 cd sendgrid-php-example
 cp .env.example .env
 composer install
